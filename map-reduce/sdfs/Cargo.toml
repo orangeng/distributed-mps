@@ -1,0 +1,30 @@
+[package]
+name = "sdfs"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+rand = "0.8"
+log = "0.4.14"
+log4rs = "1.2.0"
+chrono = "0.4"
+
+[lib]
+path = "src/lib.rs"
+
+
+[[bin]]
+name = "sdfs-client"
+path = "src/client.rs"
+
+[[bin]]
+name = "sdfs-server"
+path = "src/master.rs"
+
+[[bin]]
+name = "sdfs-datanode"
+path = "src/datanode.rs"
+
+[[bin]]
+name = "sdfs-heartbeat"
+path = "src/heartbeat.rs"

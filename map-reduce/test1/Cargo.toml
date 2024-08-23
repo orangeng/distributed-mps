@@ -1,0 +1,29 @@
+[package]
+name = "test1"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mj = {workspace = true}
+
+[[bin]]
+name = "map1"
+path = "src/map1.rs"
+
+[[bin]]
+name = "reduce1"
+path = "src/reduce1.rs"
+
+[[bin]]
+name = "reduce2"
+path = "src/reduce2.rs"
+
+[[bin]]
+name = "sql_filter"
+path = "src/sql_filter.rs"
+
+[[bin]]
+name = "mapi"
+path = "src/mapi.rs"

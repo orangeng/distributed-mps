@@ -1,0 +1,12 @@
+[workspace]
+
+members = [
+    "sdfs",
+    "mj",
+    "logger",
+    "test1"
+]
+
+[workspace.dependencies]
+mj = {path = "mj"}
+sdfs = {path = "sdfs"}

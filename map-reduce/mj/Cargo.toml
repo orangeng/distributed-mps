@@ -1,0 +1,31 @@
+[package]
+name = "mj"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+rand = "0.8"
+log = "0.4.14"
+log4rs = "1.2.0"
+chrono = "0.4"
+sdfs = {workspace = true}
+
+[lib]
+path = "src/lib.rs"
+
+
+[[bin]]
+name = "mj-client"
+path = "src/client.rs"
+
+[[bin]]
+name = "mj-leader"
+path = "src/leader.rs"
+
+[[bin]]
+name = "mj-heartbeat"
+path = "src/heartbeat.rs"
+
+[[bin]]
+name = "mj-worker"
+path = "src/worker.rs"
